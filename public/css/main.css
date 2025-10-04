@@ -1,0 +1,13 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
