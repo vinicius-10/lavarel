@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/myrron', function () {
+    return view('myrron');
+});
+
+Route::get('/demon', function () {
+    return view('demon');
+});
+
+Route::get('/shadow', function () {
+    return view('shadow');
 });
