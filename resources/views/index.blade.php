@@ -44,10 +44,13 @@
 
         <div class="main">
             <div>
-                É {{ $isDayOrNight }}
                 @if ( $isDayOrNight  == 'nigth')
                 tenha cuidado
                 @endif
+                <br>
+                @foreach ($sedatines as $entity)
+                    {{ $loop->index }} - {{ $entity }}<br>
+                @endforeach
             </div>
             
         </div>

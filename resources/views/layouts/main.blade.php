@@ -9,21 +9,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel='stylesheet' href="/css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
-
-        <link rel='stylesheet' href="/css/main.css">
+        
     </head>
     <body class="antialiased">
 
             <header>
-                <div class="main-menu">
-                    <a href="/">Inicio</a>
-                </div>
-                <div class="user">
-                    vini
-                </div>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="collapse navbar-collpase" id="navbar">
+                        <ul class="navbar-nav">
+                            <li class="navbar">
+                                <a href="/" class="navbar">Inicio</a>
+                            </li>
+                            <li class="navbar">
+                                <a href="myrron" class="navbar">Myrron Run</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </header>
             <main>
                 @yield('contend')

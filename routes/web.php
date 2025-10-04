@@ -14,15 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index',['isDayOrNight'=>'nigth']);
+    return view('index',['isDayOrNight'=>'nigth','sedatines'=>['Myrron Run','Demon Red','Shadow']]);
 });
 
-Route::get('/myrron', function () {
-    return view('myrron');
+Route::get('/myrron/{id?}', function ($id = null) {
+    return view('myrron',['id'=>$id]);
 });
 
 Route::get('/demon', function () {
-    return view('demon');
+    $id = request('id');
+    return view('demon',['id'=>$id]);
 });
 
 Route::get('/shadow', function () {

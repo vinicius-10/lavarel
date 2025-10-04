@@ -10,7 +10,7 @@
     <div class="main">
         <h1>Demon Red</h1> 
 
-       
+       id = {{ $id }}
     </div>
 
     <div class="right-side">
