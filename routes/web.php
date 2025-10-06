@@ -1,21 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventContrller;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
-Route::get('/', function () {
-    return view('index',['isDayOrNight'=>'nigth','sedatines'=>['Myrron Run','Demon Red','Shadow']]);
-});
+Route::get('/', [EventContrller::class,'index']);
+
+Route::get('/events/create', [EventContrller::class,'create']);
 
 Route::get('/myrron/{id?}', function ($id = null) {
     return view('myrron',['id'=>$id]);

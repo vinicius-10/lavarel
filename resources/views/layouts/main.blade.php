@@ -32,6 +32,7 @@
                             <li class="navbar">
                                 <a href="myrron" class="navbar">Myrron Run</a>
                             </li>
+                             
                         </ul>
                     </div>
                 </nav>
@@ -44,12 +45,16 @@
                     </button>
                     
                     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                        <div class="navbar-nav mr-auto">
-                        <a href="myrron" class="nav-link active">Myrron Run</a>
+                        <div class="navbar-nav mr-auto">        
+                            <a href="/myrron" class="nav-link active">Myrron Run</a>
+                            <a href="/demon" class="nav-link active">Demon Red</a>
+                            <a href="/shadow" class="nav-link active">Shadow</a>
+                            <a href="/events/create" class="nav-link active">Eventos</a>
                         </div>
+                            
                         <div class="navbar-nav ">
-                            <a href="#" class="nav-link active">Vini</a>
-                            <a href="#" class="nav-link active">Deslogar</a>
+                                <a href="#" class="nav-link active">Vini</a>
+                                <a href="#" class="nav-link active">Deslogar</a>
                         </div>
                     </div>
                 </nav>
