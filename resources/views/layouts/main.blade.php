@@ -53,8 +53,8 @@
                         </div>
                             
                         <div class="navbar-nav ">
-                                <a href="#" class="nav-link active">Vini</a>
-                                <a href="#" class="nav-link active">Deslogar</a>
+                            <a href="#" class="nav-link active">Vini</a>
+                            <a href="#" class="nav-link active">Deslogar</a>
                         </div>
                     </div>
                 </nav>
