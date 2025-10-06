@@ -11,6 +11,6 @@ class EntityControler extends Controller
     public function index(){
         $entities = Entity::all();
 
-        return view('entity',['entities'=>$entities]);
+        return view('/entities/entity',['entities'=>$entities]);
     }
 }

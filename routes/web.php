@@ -9,6 +9,9 @@ Route::get('/', [IndexControler::class,'index']);
 
 Route::get('/entity',[EntityControler::class,'index']);
 
+
+
+
 Route::get('/myrron/{id?}', function ($id = null) {
     return view('myrron',['id'=>$id]);
 });
