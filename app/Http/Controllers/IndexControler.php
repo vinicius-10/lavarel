@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class EventContrller extends Controller
+class IndexControler extends Controller
 {
     public function index(){
         return view('index',['isDayOrNight'=>'nigth','sedatines'=>['Myrron Run','Demon Red','Shadow']]);

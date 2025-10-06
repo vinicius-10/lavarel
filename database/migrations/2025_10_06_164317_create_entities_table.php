@@ -13,8 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('entity', function (Blueprint $table) {
-            $table->string('gender');
+        Schema::create('entities', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('other_names');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('entity', function (Blueprint $table) {
-             $table->dropColumn('gender');
-        });
+        Schema::dropIfExists('entities');
     }
 };

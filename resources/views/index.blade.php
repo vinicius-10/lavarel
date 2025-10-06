@@ -25,9 +25,8 @@
         <div class="main">
             <div>
                 <ul>
-                    <li><a href="myrron">Myrron Run</a></li>
-                    <li><a href="demon">Demon Red</a></li>
-                    <li><a href="shadow">Shadow</a></li>
+                    <li><a href="entity">entidades</a></li>
+
                 </ul>
             </div>
             
