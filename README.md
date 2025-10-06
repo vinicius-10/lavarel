@@ -9,3 +9,7 @@
 
 ## Sobre
 Este é um teste de projeto utilizando do framework lavarel
+
+## comandos uteis utilizados 
+| Função | Comando |
+| Iniciar servidor lavarel | php artisan serve |
