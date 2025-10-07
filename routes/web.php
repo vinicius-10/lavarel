@@ -1,5 +1,6 @@
 <?php
 
+
 use App\Http\Controllers\EntityControler;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexControler;
@@ -8,8 +9,8 @@ use App\Http\Controllers\IndexControler;
 Route::get('/', [IndexControler::class,'index']);
 
 Route::get('/entity',[EntityControler::class,'index']);
-
-
+Route::get('entity/create',[EntityControler::class,'create']);
+Route::post('/entities',[EntityControler::class,'store']);
 
 
 Route::get('/myrron/{id?}', function ($id = null) {

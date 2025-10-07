@@ -26,7 +26,7 @@
             <div>
                 <ul>
                     <li><a href="entity">entidades</a></li>
-
+                    <li><a href="entity/create">Criar</a></li>
                 </ul>
             </div>
             
