@@ -14,9 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::create('entities', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('other_names');
+            $table->id('ent_id');
+            $table->string('ent_name');
+            $table->string('ent_otherNames');
             $table->timestamps();
         });
     }

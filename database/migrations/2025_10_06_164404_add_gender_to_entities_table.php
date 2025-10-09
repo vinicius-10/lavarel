@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('entities', function (Blueprint $table) {
-            $table->string('gender');
+            $table->string('ent_gender');
         });
     }
 
@@ -26,7 +26,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('entities', function (Blueprint $table) {
-            $table->dropColumn('gender');
+            $table->dropColumn('ent_gender');
         });
     }
 };
