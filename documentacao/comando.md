@@ -7,5 +7,6 @@
 | Sincroniza o banco com as mogration| php artisan migrate |
 | Cria uma nova estrutura de tabela |  php artisan make:migration create_NOME_table |
 | Atualiza as tabelas | php artisan migrate:fresh |
-| Adicionar uma nova coluna durante desenvolvimento | php artisan make:migration add_gender_to_entity_table |
+| Adicionar uma nova coluna durante desenvolvimento | php artisan make:migration add_IDENTICADOR_to_TABELA_table |
 | Voltar ação | php artisan migrate:rollback |
+| agrupa as migration | php artisan schema:dump |
