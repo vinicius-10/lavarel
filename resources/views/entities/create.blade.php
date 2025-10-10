@@ -10,7 +10,7 @@
 
     <div class="main">
         <div id="entities-create-container" class="col-md-6 offset-md-3">
-            <form action="/entities" method="POST">
+            <form action="/entities" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                     <label for="name">Nome:</label>
@@ -23,6 +23,11 @@
                 <div class="form-group">
                     <label for="gender">Genero:</label>
                     <input type="text" class="form-control" id="gender" name="gender" placeholder="Genero">
+                </div>
+
+                <div class="form-group">
+                    <label for="image">Imagens</label>
+                    <input type="file" id="image" name="image" class="form-control-file">
                 </div>
                 <input type="submit" class="btn btn-primary" value="Cadastrar">
             </form>

@@ -20,11 +20,19 @@ class EntityControler extends Controller
 
     public function store(Request $request){    
         Entity::create([
-            'ent_name'=> $request->name,
-            'ent_gender' => $request->gender,
-            'ent_otherNames'=> $request->other_names
+            'ent_name'=> $request->input('name'),
+            'ent_gender' => $request->input('gender'),
+            'ent_otherNames'=> $request->input('other_names')
         ]);
-        
+
+        $file = $request->file('image');
+
+        $extensio = $file->extension();
+
+        $image_name = md5($file->getClientOriginalName() . strtotime('now')) . '.' . $extensio;
+
+        $file->move(public_path('img/upload/entity/'),$image_name);
+
         return redirect('/entity')->with('success','Entidade cirada com sucesso!');
     }
 }
