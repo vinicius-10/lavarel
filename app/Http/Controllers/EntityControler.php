@@ -23,14 +23,14 @@ class EntityControler extends Controller
     public function store(Request $request){    
         $request->validate([
             'name'=> 'required|string|max:255',
-            'gender' => 'required|string|max:50',
+            'gender' => 'nullable|string|max:255',
             'other_names' => 'nullable|string|max:255',
             'images.*' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048'
         ]);
 
         $entity = Entity::create([
             'ent_name'=> $request->name,
-            'ent_gender' => $request->gender,
+            'ent_gender' => $request->input('gender','indefinido'),
             'ent_otherNames'=> $request->other_names
         ]);
 

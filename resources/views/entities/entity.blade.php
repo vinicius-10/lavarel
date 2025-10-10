@@ -14,7 +14,7 @@
     <div class="main">
         <h1>{{ $entity->ent_name }}</h1>
         @foreach ($entity->images as $image)
-            <img src="{{ asset('storage/'.$image->img_path) }}" aria-label={{ $entity->ent_name }}>
+            <img src="{{ asset('storage/'.$image->img_path) }}" aria-label={{ $entity->ent_name }} width="150px">
         @endforeach
     </div>
 

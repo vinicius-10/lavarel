@@ -9,6 +9,16 @@
     </div>
 
     <div class="main">
+        @if ($errors->any())
+        {{ $errors }}
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
         <div id="entities-create-container" class="col-md-6 offset-md-3">
             <form action="/entities" method="POST" enctype="multipart/form-data">
                 @csrf
@@ -27,7 +37,7 @@
 
                 <div class="form-group">
                     <label for="images">Imagens</label>
-                    <input type="file" id="images" name="images[]" multiple class="form-control-file">
+                    <input type="file" id="images" name="images[]" accept="image/*" multiple class="form-control-file">
                 </div>
                 <input type="submit" class="btn btn-primary" value="Cadastrar">
             </form>
