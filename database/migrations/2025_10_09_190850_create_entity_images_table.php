@@ -17,7 +17,7 @@ return new class extends Migration
     {
         Schema::create('entity_images', function (Blueprint $table) {
             $table->id('img_id');
-            $table->foreignIdFor(Entity::class);
+            $table->foreignIdFor(Entity::class,);
             $table->string("img_path");           
             $table->timestamps();
         });

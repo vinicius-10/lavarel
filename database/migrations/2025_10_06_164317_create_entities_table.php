@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('entities', function (Blueprint $table) {
             $table->id('ent_id');
             $table->string('ent_name');
-            $table->string('ent_otherNames');
+            $table->string('ent_otherNames')->nullable();
             $table->timestamps();
         });
     }

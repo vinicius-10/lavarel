@@ -19,14 +19,11 @@ class EntityControler extends Controller
     }
 
     public function store(Request $request){    
-        $entity = new Entity;
-
-        print($request->name);
-        $entity->name = $request->name;
-        $entity->other_names = $request->other_names;
-        $entity->gender = $request->gender;
-
-        $entity->save();
+        Entity::create([
+            'ent_name'=> $request->name,
+            'ent_gender' => $request->gender,
+            'ent_otherNames'=> $request->other_names
+        ]);
         
         return redirect('/entity')->with('success','Entidade cirada com sucesso!');
     }

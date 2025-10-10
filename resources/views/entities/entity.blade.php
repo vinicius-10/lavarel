@@ -12,7 +12,7 @@
     </div>
 
     <div class="main">
-        <h1>{{ $entity->name }}</h1>
+        <h1>{{ $entity->ent_name }}</h1>
 
     </div>
 
