@@ -26,8 +26,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="image">Imagens</label>
-                    <input type="file" id="image" name="image" class="form-control-file">
+                    <label for="images">Imagens</label>
+                    <input type="file" id="images" name="images[]" multiple class="form-control-file">
                 </div>
                 <input type="submit" class="btn btn-primary" value="Cadastrar">
             </form>

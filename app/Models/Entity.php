@@ -26,4 +26,8 @@ class Entity extends Model{
         'ent_name',
     ];
 
+    public function images(){
+        return $this->hasMany(Entity_image::class);
+    }
+
 }

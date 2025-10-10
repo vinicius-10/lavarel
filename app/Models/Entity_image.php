@@ -23,7 +23,10 @@ class Entity_image extends Model
      */
     protected $fillable = [
         'img_path',
-        'ent_id',
+        'entity_ent_id',
     ];
 
+    public function entity(){
+        return $this->belongsTo(Entity::class); 
+    }
 }
